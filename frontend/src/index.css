@@ -1,0 +1,27 @@
+/* Reset básico e fundo corporativo */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f3f4f6; /* Cinza claro corporativo */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Sobrescrever as cores do Amplify para um Azul Corporativo */
+[data-amplify-authenticator] {
+  --amplify-colors-brand-primary-10: #e0e7ff;
+  --amplify-colors-brand-primary-80: #1e3a8a; /* Azul escuro */
+  --amplify-colors-brand-primary-90: #1e40af; /* Hover do botão */
+  --amplify-colors-brand-primary-100: #172554;
+  --amplify-components-authenticator-router-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --amplify-components-authenticator-router-border-width: 0;
+  --amplify-radii-medium: 8px; /* Bordas mais arredondadas */
+}
+
+/* Remover a borda padrão do componente de separadores */
+.amplify-tabs {
+  border-bottom: 1px solid #e5e7eb;
+}
